@@ -13,7 +13,7 @@ function subsets(S, idx, n) {
     for (let i = 0; i < vec.length; i++) {
       let v = vec[i]
       result.push(v.slice(0))
-      v.push(a)
+      v.unshift(a)
       result.push(v)
     }
   }

@@ -95,4 +95,4 @@ Observable在四人帮的观察者模式上添加了两个缺失的语义，以�
 1. 当没有更多的有效数据时生产者通知消费者的能力（Iterable上进行一次foreach循环，照常返回；Observable上执行观察者的`onCompleted`方法）
 1. 当有错误发生时生产者通知消费者的能力（Iterable在迭代时若发生错误会抛出异常；Observable执行观察者的`onError`方法）
 
-在这些条件下，ReactiveX完成了Iterable和Observable类型的一致化。二者的唯一不同在于其中数据流的方向。这一点非常中业，因为现在任何你可以在Iterable上执行的操作，同样可以在Observable上使用。
+在这些条件下，ReactiveX完成了Iterable和Observable类型的一致化。二者的唯一不同在于其中数据流的方向。这一点非常重要，因为现在任何你可以在Iterable上执行的操作，同样可以在Observable上使用。
